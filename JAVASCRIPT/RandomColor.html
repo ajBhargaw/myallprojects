@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>random number</button>    
+
+    <script>
+        var a = document.querySelector('button');
+
+        a.addEventListener("click", ()=>{
+           var add = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
+
+           localStorage.setItem("aaa", add);
+
+           document.body.style.background = localStorage.getItem("aaa");
+        })
+        document.body.style.background = localStorage.getItem("aaa");
+
+    </script>
+</body>
+</html>

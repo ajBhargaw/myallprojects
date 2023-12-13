@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        form{
+           width: 400px;
+           margin: auto;
+           margin-top: 20px;
+           box-shadow: 0px 0px 10px 5px #ccc;
+           padding: 20px;
+        }
+         label{
+            display: block;
+            margin-top: 10px;
+         }
+         input{
+            width: 100%;
+            height: 40px;
+            display: block;
+         }
+         button{
+            width: 100%;
+            height: 40px;
+            display: block;
+            margin-top: 10px;
+         }
+         .error{
+            font-size: 16px;
+            color: red;
+            margin-top: 0px;
+            display: block;
+            margin-bottom: 10px;
+         }
+
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" name="uname">
+            <span></span>
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" name="email">
+            <span></span>
+        </div>
+        <div class="form-group">
+            <label for="">Phone</label>
+            <input type="text" name="phone">
+            <span></span>
+        </div>
+        <div>
+            <button>Save</button>
+        </div>
+       
+    </form>
+</body>
+
+<script>
+    let errorobj=[
+		{
+			'error':'Please Enter Your Name',
+			'regex':/^[a-zA-Z ]{2,30}$/,
+			'regexError':'Please Enter Correct Name Format....'
+		},
+		{
+			'error':'Please Enter Your Email',
+			'regex':/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+			'regexError':'Please Enter Correct Email Format....'
+		},
+		{
+			'error':'Please Enter Your Phone Number',
+			'regex':/^\d{10}$/,
+			'regexError':'Please Enter Correct Phone Format value....'
+		}
+		
+	]
+    const form = document.querySelector('form');
+    const allspan = document.querySelectorAll('span');
+
+    form.addEventListener('submit', (event)=>{
+        event.preventDefault(); 
+
+        let Allinput = new FormData(form);      
+        let i =0;
+
+        for(let [inputname, inputvalue] of Allinput){
+            allspan[i].innerHTML=' ';
+            allspan[i].classList.remove('error');
+
+            if(inputvalue == ""){
+                allspan[i].innerHTML = errorobj[i].error;
+                allspan[i].classList.add('error')
+            }
+            else if(!errorobj[i].regex.test(inputvalue)){
+                allspan[i].innerHTML = errorobj[i].regexError;
+                allspan[i].classList.add('error')
+            }
+            i++ ;
+        }
+        event.target.reset();
+    })
+
+
+
+
+
+   
+</script>
+</html>

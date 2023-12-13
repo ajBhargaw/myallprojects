@@ -1,0 +1,102 @@
+@media screen and (max-width: 775px) {
+
+   .position-icon{
+      display: none;
+   }
+
+   .project h1{
+      font-size: 30px;
+      font-weight: 600;
+   }
+
+   .navadd{
+      background-color:#173e62;
+   }
+   .banner{
+      padding-top: 110px;
+   }
+   .project button {
+      margin-top: 10px;
+   }
+   .main14-div .item{
+      max-height: 300px;
+   }
+   .project{
+      top: 20%;
+      left: 5%;
+      z-index: 99;
+   }
+   .banner{
+      height: auto;
+   }
+
+   /* css of section 1 */
+
+   .section_1{
+      padding: 80px 0px;
+   }
+   .s1_h2{
+      font-size: 25px;
+   }
+   .num{
+      margin-top: 20px;
+   }
+   .num h2{
+      font-size: 60px;
+   }
+
+    /* css of section 2 */
+
+   .s2_box{
+      padding: 10px 10px 10px 10px;
+   }
+   .s2_img_div{
+     position: relative;
+   }
+   /* css of section 4 */
+   .section_4 h1{
+      margin: 30px 0;
+   }
+
+   /* css of section 6 */
+   .club_skylla_img{
+      position: relative;
+      left: 0px;
+      top: 30px;
+      
+   }
+   .club_skylla{ 
+      padding: 10px;
+   }
+
+   /* css of section 7 */
+   .section_7{
+      padding: 40px 0;
+   }
+   .uptown_area p{
+      padding: 10px 10px 0 0px;
+   }
+
+   /* css of section 8 */
+   .organi p{
+      padding: 10px 10px;
+   }
+   .conditions{
+      padding: 0 20px;
+   }
+
+   /* css of section 9 */
+
+   .story_img{
+      position: relative;
+      left: 0px;
+      height: 400px;
+      max-width: 400px;
+   }
+   .story_para{
+      padding-left: 0px;
+   }
+   .story_para p{
+      font-size: 15px;
+   }
+}

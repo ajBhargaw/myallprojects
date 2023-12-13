@@ -1,0 +1,151 @@
+@media only screen and (min-width: 0px) and (max-width: 776px){
+
+.headingserch{
+    font-size: 20px;
+    line-height: 30px;
+}
+	.midimg{
+		display:none;
+	}
+	.icons img {
+    width: 50px;
+    height: auto;
+}
+	.boxsecurty {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+}
+.smartcity {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left!important;
+}
+.projectcont h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.imgover{
+    margin-top: 25px;
+}
+.thanheading h3{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+.cont{
+    font-size: 16px;
+}
+.cardlayout .card {
+    min-height: fit-content;
+
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.ricehead{
+    padding-top: 0px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.tablelayput{
+    border: none;
+    line-height: 50px;
+    text-align: center;
+}
+.highlightheds{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+}
+.cardmenu .card{
+    width: 100%;
+    margin-bottom: 0px;
+}
+.experheading h4{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.experheading p {
+    text-align: center;
+}
+.videosmenu{
+    margin-bottom: 30px;
+}
+.cardmenu p{
+    text-align: center;
+}
+.locationmaap{
+    margin-bottom: 30px;
+}
+.tabingmenu {
+    margin-top: 30px;
+}
+.slderimgani img{
+    margin: auto;
+}
+.slderimgani p {
+    text-align: center;
+}
+.sslidersanimi .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    left: 0px;
+}
+.homeimg {
+    height: inherit;
+}
+.sehdulecont{
+    padding-top: 20px;
+}
+.sehdulecont h5 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.gallery-overlay{
+background: none;
+}
+.akesedubtn{
+    width: 100%;
+}
+.footerleft {
+    font-size: 20px;
+    line-height: 30px;
+}
+.locateadd{
+    text-align: left;
+}
+.buttonss-outer
+{
+display: none;
+}
+.respons{
+    width: 100%;
+    position: fixed;
+    padding: 4px;
+    bottom: 0px;
+    background: #ff6600;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    z-index: 9990;
+}
+.enquire{
+    display: none;
+}
+.resonsiveenquery button{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+#button {
+bottom: 50px;
+}
+.flexs{
+    display: inline;
+}
+}

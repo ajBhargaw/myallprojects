@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .main{
+            background-color: black;
+            width:350px;
+            height: 425px;
+            text-align:center;
+            box-shadow: 0px 0px 6px 2px rgb(7, 7, 7);
+            margin: auto;
+            padding: 25px 0px;
+            margin-top: 200px;
+          }
+          button{
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             margin: 10px;
+             font-weight: bold;
+             box-shadow: 2px 4px 6px white;
+
+          }
+        .main input{
+            width: 250px;
+            height: 40px;
+            box-shadow: 2px 4px 6px white;
+            text-align: end;
+        }
+         .inp::placeholder{ 
+            text-align: right;
+        }
+      
+    </style>
+</head> 
+<body>
+    <div class="main">
+        <input type="text" class="inp" placeholder="0"/>
+        <div class="div1">
+            <button>Ac</button>
+            <button>Del</button>
+            <button>=</button>
+            <button>/</button>
+        </div>
+        <div class="div2">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+        </div>
+        <div class="div3">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+        </div>
+        <div class="div4">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+        </div>
+        <div class="div5">
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button>%</button>
+        </div>
+    </div><br/><br/>
+
+    <script>    
+       
+        var allbtn = document.querySelectorAll('button');
+
+        var input = document.querySelector('input');
+
+        var opr = ['+','-','*','/','.','%','='];
+
+        var finaldata;
+
+        
+        allbtn.forEach((e, i) => {
+            e.addEventListener('click', () => {
+
+                
+                var invalue = input.value;    //why local ! global
+
+                var lastchar = invalue[invalue.length-1];
+
+                var lastCharAfterRemove = invalue.slice(0, invalue.length-1);
+                
+
+                if(e.innerHTML == "Ac"){
+                    input.value = " ";
+                }
+                else if(e.innerHTML == "=") {
+                    if(opr.includes(lastchar)){
+                        input.value = lastCharAfterRemove;
+                    }
+                    else{
+                        input.value = eval(invalue);
+                    }  
+                }
+                else if(e.innerHTML == "Del"){
+                    input.value = lastCharAfterRemove;//input.value != invalue
+                }
+                else {
+                    if(opr.includes(e.innerHTML)){
+                        if(opr.includes(lastchar)){
+                        finaldata = lastCharAfterRemove+e.innerHTML;
+                        }
+                        else{
+                        finaldata = invalue + e.innerHTML;
+                        }
+                    }
+                    else{
+                    finaldata = invalue + e.innerHTML;
+                    }
+                    input.value = finaldata;
+                }
+            })
+        });
+
+        //   var b =[10, 20, 30, 40];
+        //   var c = b.includes(20);
+
+        //   console.log(c);
+      
+    </script>
+
+
+
+     
+</body>
+</html>

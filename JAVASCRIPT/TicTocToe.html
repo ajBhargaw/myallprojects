@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
+         #info{
+            margin-top: 10px;
+         }
+         #app{
+            display: flex;
+            width: 300px;
+            min-height: 300px;
+            border: 1px solid ;
+            flex-wrap: wrap;
+         }
+         .cell{
+            width: 100px;
+            height: 100px;
+            display: block;
+            border: 1px solid black;
+            box-sizing: border-box;
+         }
+         .circle{
+            display: block;
+            border: 15px solid blue;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+         }
+         .cross{
+            display: block;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform: rotate(45deg);
+         }
+         .cross::before{
+            content: '';
+            width: 15px;
+            height: 100px;
+            position: absolute;
+            left: 40px;
+            background-color: red;
+         }
+         .cross::after{
+            content: '';
+            width: 100px;
+            height: 15px;
+            top: 40px;
+            position: absolute;
+            background-color: red;
+         }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="info"> </div>
+</body>
+<script>
+    const appcontainer = document.getElementById("app");
+    const info = document.getElementById("info");
+    let go = "circle";
+
+    const cratecell = ()=>{
+         new Array(9).fill(0).forEach((item, index)=>{
+            const cell = document.createElement("div");
+            cell.classList.add("cell");
+            cell.setAttribute("id",  index);
+            cell.addEventListener("click", addtogo);
+            appcontainer.append(cell);
+         });
+
+        info.textContent= `it's ${go} turn`;
+    };
+
+   const addtogo = (e) => {
+         const currentTarget = e.currentTarget;
+         const elem = document.createElement("div");
+         elem.classList.add(go);
+         currentTarget.append(elem);
+
+         go = go === "circle" ? "cross" : "circle";
+
+         info.textContent= `it's ${go} turn`;
+         currentTarget.removeEventListener("click", addtogo);
+
+         if(winner()){
+            info.textContent= ` ${winner().toUpperCase()}  is the winner`;
+            const cellref = document.querySelectorAll(".cell");
+            Object.keys(cellref).map((item) =>{
+               cellref[item].removeEventListener("click", addtogo);
+            })
+         }
+   };
+
+
+   const winner  = ()=>{
+      const cellref = document.querySelectorAll(".cell");
+      const lines = [
+         [0, 1, 2],
+         [3, 4, 5],
+         [6, 7, 8],
+         [0, 3, 6],
+         [1, 4, 7],
+         [2, 5, 8],
+         [0, 4, 8],
+         [2, 4, 6]
+      ];
+
+      for(let i =0; i < lines.length; i++){
+         const [a, b, c] = lines[i];
+
+         if(
+            cellref[a] &&
+            cellref[a]?.firstChild?.classList.value ===
+            cellref[b]?.firstChild?.classList.value &&
+            cellref[a]?.firstChild?.classList.value ===
+            cellref[c]?.firstChild?.classList.value 
+         ){
+            return cellref[a]?.firstChild?.classList.value;
+         }
+      }
+   }
+   cratecell();
+  
+</script>
+</html>

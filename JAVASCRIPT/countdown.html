@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+               *{
+                    margin: 0px;
+                    padding: 0px;
+               }
+               body{
+                    width: 100%;
+                    height: 100vh;
+                    background: #555;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    flex-direction: column;
+               }
+               div{
+                    display: flex;
+                    width: 600px;
+                    height: 100px;
+                    background-color: black;
+                    color: white;
+                    font-size: 70px;
+                    font-weight: 700;
+                    padding: 20px 50px;
+                    border-radius: 30px;
+               }
+               P{
+                    color:  chocolate;
+                    font-size: 40PX;
+                    font-weight: 600;
+               }
+               P SPAN{
+                    color: brown;
+               }
+          </style>
+</head>
+<body>
+     <!-- <p> DIWALI  <SPAN>IS </SPAN>  COMING </p> -->
+     <div>
+          
+     </div>
+     <script>
+          var a = new Date(" NOVEMBER 12, 2023  10:00:00").getTime();
+
+          function countdown(){     
+               var b = new Date().getTime();
+               var d= a - b;
+                
+               var day = Math.floor(d / (86400* 1000));
+                
+               var hours = Math.floor((d % (86400 * 1000)) / (3600* 1000));
+                
+               var min = Math.floor((d % (3600 * 1000)) / (60 * 1000)  );
+                
+               var sec = Math.floor((d % (60 * 1000)) / (1000)  );
+               
+               var z = day + 'D' + ' ' + hours + 'H' + ' ' + min + 'M' + ' ' +sec + 'S' + ' ' ;
+
+               document.getElementsByTagName('div')[0].innerText = z;
+                 
+          }
+          setInterval(function(){
+               countdown();
+                },1000)
+      
+     </script>    
+</body>
+</html>

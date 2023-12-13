@@ -1,0 +1,572 @@
+header{
+ background: #F5EFEB;
+ border-top: 20px solid #9C623E;
+}
+nav div ul li{
+   margin: 0 10px;
+}
+nav div ul li a{
+   color: #212121;
+   font-size: 17px;
+   font-weight: 400;
+
+}
+.btn1{
+   background-color: #000000;
+   color: #fff;
+   font-weight: 400;
+   font-size: 17px;
+   padding: 5px 10px ;
+   border-radius: 7px;
+   border: none;
+   outline: none;
+}
+.btn2{
+   background-color: #D2743A;
+   color: #FFFFFF;
+   font-weight: 400;
+   font-size: 17px;
+   padding: 5px 10px ;
+   border-radius: 7px;
+   border: none;
+   outline: none;
+}
+
+/* css of banner section first part */
+
+.banner{
+   background: linear-gradient( #683D22, #42230F);
+}
+
+.small_img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: #F3E3D9;
+   border-radius: 5px;
+   text-align: center;
+   padding: 15px 15px;
+}
+.small_img h5{
+   font-size: 15px;
+}
+.content h3{
+   font-size: 45px;
+}
+.content h3 span{
+   color: #D49D7B;
+   font-size: 45px;
+}
+.content button{
+   color: #492712;
+   border: none;
+   outline: none;
+   border-radius: 2px;
+}
+
+/* css of second section part */
+
+.circle{
+   width: 50px;
+   height: 80px;
+   border: 1px solid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.brown-line{
+   width: 3px;
+   height: 30px;
+   background-color: #683D22;
+}
+
+/* css  of collection section-3  */
+
+.section-3{
+  margin-top: 100px;
+}
+.items img{
+border-radius: 115px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+mix-blend-mode: multiply;
+}
+.heading{
+   font-size: 30px;
+   font-weight: 700;
+   color: linear-gradient(#683D22, #42230F);
+
+}
+.view-btn button{
+   font-size: 18px;
+   font-weight: 400;
+   border: none;
+   outline: none;
+   width: 50%;
+}
+.collection  .items{
+  width: 163px;
+  height: 163px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border-radius: 6px;
+   background-color: #DBDEE6
+   ;
+}
+.collection .items img{
+  width: 100px;
+}
+.collection  div p{
+   text-align: center;
+   font-size: 14px;
+}
+
+/* css of products section-4 */
+
+.section-4{
+   margin-top: 80px;
+}
+.section-4-heading{
+   font-family: Readex Pro;
+   font-size: 30px;
+   font-weight: 700;
+   color: #683D22;
+   text-align: center;
+      
+}
+
+/* .section-4 div  p{
+   font-size: 30px;
+   font-weight: 700;
+   color: #683D22;
+} */
+
+.products-box .img-box{
+   height: 200px;
+}
+
+.products-box div h4{
+   font-size: 16px;
+   font-weight: 700;
+   color: #683D22;
+   text-align: start;
+   padding-left: 35px;
+}
+.products-box div h3{
+   font-size:22px;
+   font-weight: 600;
+   color: #031424;
+   text-align: start;
+   padding-left: 35px;
+   padding-right: 25px;
+}
+.products-box div h3 span{
+   color: #11862B;
+   font-size: 18px;
+   font-weight: 500;
+}
+.products-box button{
+    width: 244px;
+    height: 47px;
+    background-color:#9C623E;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    margin-top: 15px;
+}
+.products-box div p{
+   color: #212121;
+   font-size: 14px;
+   font-weight: 400;
+}
+.dining-chair{
+   position: relative;
+   top: 60px;
+}
+.loadBtn button{
+   background-color:  #9C623E;
+   color: #ffffff;
+   font-size: 17px;
+   padding: 6px 15px;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+
+}
+
+.products-box .now-change{
+   background-color: #fff;
+   color: #683D22;
+   border-radius: 6px;
+   box-shadow: 0px 4px 11px 0px rgba(210, 116, 58, 0.44);
+}
+
+/* css of section-5  */
+
+.section-5{
+   margin-top: 60px;
+}
+.section-5 > div{
+   background-color: #9C623E;
+}
+.section-5 div h3{
+   color: #FFFFFF;
+   font-size: 30px;
+   font-weight: 700;
+}
+.section-5 div  button{
+   width: 150px;
+   height: 40px;
+   border: none;
+   outline: none;
+   border-radius: 6px;
+
+}
+
+ /* css of section-6 */
+
+ .section-6{
+   margin-top: 80px;
+ }
+ .work{
+    color: #683D22;
+    font-size: 30px;
+    font-weight: 700;
+ }
+ .work-box div{
+   background-color: #F3E3D9;
+   border-radius: 7px;
+ }
+ .work-box div h3{
+   font-size: 20px;
+   font-weight: 600;
+   color: #212121;
+ }
+ .work-box div p{
+   font-size: 14px;
+   font-weight: 300;
+   color: #212121;
+ }
+ .work-box div div span{
+   font-size: 58px;
+   font-weight: 600;
+   color: #212121;
+   opacity: 0.1;
+ }
+
+  /* css of section-7 */
+
+  .section-7{
+   margin-top: 90px;
+  }
+  .special_pro > div{
+   margin-top: 30px;
+  }
+
+  .section_7_heading{
+   font-family: Readex Pro;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   background-clip: text;
+   text-align: center;
+   color: #683D22;
+  }
+  .special_pro .offbtn button{
+   color: #FFFFFF;
+   font-size: 14px;
+   font-weight: 500;
+   background-color: #031424;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+  } 
+  .special_pro .off{
+   color: #FFFFFF;
+   font-size: 14px;
+   font-weight: 500;
+   background-color: #031424;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+  } 
+  
+  .special_pro .offer{
+   font-size: 14px;
+   font-weight: 500;
+   color: #FFFFFF;
+   background: linear-gradient(#683D22, #42230F);
+   border: none;
+   outline: none;
+  }
+  .special_pro div h3{
+   font-size: 16px;
+   font-weight: 700;
+   color:#683D22;
+   margin: 10px 0;
+  }
+  .special_pro div .prise1{
+      color: #031424;
+      font-size: 22px;
+      font-weight: 600;
+  }
+  .special_pro  .prise2{
+    color: #11862B;
+  }
+  .special_pro .now{
+     background-color:#9C623E ;
+     color: #FFFFFF;
+     font-size: 17px;
+     font-weight: 400;
+     height: 40px;
+     text-align: center;
+     width: 242px;
+     border: none;
+     outline: none;
+  }
+  .special_pro .now-change{
+   background-color: #fff;
+   color: #683D22;
+   border-radius: 6px;
+   box-shadow: 0px 4px 11px 0px rgba(210, 116, 58, 0.44);
+
+  }
+
+
+  
+  /* css of section-8 */
+  .section-8{
+   margin-top: 65px;
+  }
+  .section-8 h2{
+   font-size: 30px;
+   font-weight: 700;
+   color: #683D22;
+   text-align: center;
+  }
+
+   /* css of section-9 upcoming products*/
+   .section-9{
+      margin-top: 80px;
+   }
+
+  .section_9_heading{
+   font-family: Readex Pro;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   text-align: center;
+   color: #683D22;
+   margin: 25px 0;
+  }
+  .upcoming_pro div h3{
+   font-size: 16px;
+   font-weight: 700;
+   color:#683D22;
+   margin: 10px 0;
+  }
+
+.upcoming_pro div .prise1{
+    color: #031424;
+    font-size: 22px;
+    font-weight: 600;
+}
+.upcoming_pro  .prise2{
+  color: #11862B;
+}
+
+  .upcoming_pro .now{
+   background-color:#9C623E ;
+   color: #FFFFFF;
+   font-size: 17px;
+   font-weight: 400;
+   height: 40px;
+   text-align: center;
+   width: 80%;
+   border: none;
+   outline: none;
+   border-radius: 8px;
+}
+.upcoming_pro .off{
+   color: #FFFFFF;
+   font-size: 14px;
+   font-weight: 500;
+   background-color: #031424;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+  } 
+  
+  .upcoming_pro .offer{
+   font-size: 14px;
+   font-weight: 500;
+   color: #FFFFFF;
+   background: linear-gradient(#683D22, #42230F);
+   border: none;
+   outline: none;
+  }
+  .upcoming_pro .offbtn button{
+   color: #FFFFFF;
+   font-size: 14px;
+   font-weight: 500;
+   background-color: #031424;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+  } 
+
+  .space-top{
+   margin-top: 70px;
+  }
+  .upcoming_pro .now-change{
+   background-color: #fff;
+   color: #683D22;
+   border-radius: 6px;
+   box-shadow: 0px 4px 11px 0px rgba(210, 116, 58, 0.44);
+
+  }
+  .special_offer{
+   color: var(--212121, #212121);
+   font-family: Readex Pro;
+   font-size: 14px;
+   font-weight: 400;
+   margin-top: 20px;
+  }
+   .special_offer div{
+     border-top: 1px solid black;
+     opacity: 0.3;
+     margin-bottom: 20px;
+     width: 70%;
+     margin: auto;
+   }
+   .special_offer p{
+      text-align: center;
+      margin-top: 10px;
+   }
+
+
+   /* css of footer part */
+
+   .footer{
+      background-color: #FFF5EE;
+   }
+   .footer-content div h4{
+      color: #000;
+      font-family: Readex Pro;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: capitalize;
+   }
+   .footer_buttom{
+      background-color: #683D22;
+      color: #FFFFFF;
+      font-size: 12px;
+      padding: 3px 0;
+      padding-left: 8px;
+   }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 575px) and (min-width: 200px) {
+
+   /* css of banner section-1 */
+
+   .content h3{
+     font-size: 29px;
+   }
+   .content h3 span{
+      font-size: 29px;
+    }
+   
+   /* css  of collection section  */
+   .heading{
+      font-size: 18px;
+
+   }
+   .view-btn button{
+      font-size: 15px;
+      width: 100%;
+   }
+
+   /* css of products section-4 */
+
+   .products-box{
+      max-width: 400px;
+      box-shadow: 0 0 3px 1px #ccc;
+      padding: 20px 10px;
+   }
+   .products > div{
+      margin-top: 15px;
+   }
+   .products div h3{
+      justify-content: space-around;
+   }
+   .products button{
+      width: 90%;
+      height: 40px;
+      
+   }
+   .desk{
+      max-width: 225px;
+   }
+
+   /* css of section-5 */
+   .section-5 div h3{
+      font-size: 20px;
+
+   }
+   .section-5 div button{
+      width: 90px;
+      font-size: 12px;
+      height: 30px;
+   }
+   .section-5 div img{
+      width: 200px;
+      height: 130px;
+   }
+
+    /* css of section-6 */
+
+    .special_pro div {
+      margin: auto;
+    }
+
+   /* css of section-7 */
+   .special_pro .col{
+      margin: 10px 0;
+   }
+    .special_pro_box{
+      max-width: 370px;
+      box-shadow: 0 0 3px 1px #ccc;
+      padding: 10px;
+    }
+    .special_pro .now{
+      width: 80%;
+      margin: auto;
+    }
+
+   /* css of section-9 */
+
+   .upcoming_pro .col{
+      box-shadow: 0 0 4px 1px #ccc;
+      margin:10px 0;
+      text-align: center;
+      padding: 10px 10;
+   }
+   .upcoming_pro .offbtn{
+      text-align: start;
+   }
+   .upcoming_pro .col .best-offer{
+      text-align: start;
+   }
+
+}

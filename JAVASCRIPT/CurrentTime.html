@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>date</title>
+          <script>
+            // alert("hello mr. sohan");
+            // prompt();
+            // confirm("do you want to close it.");
+
+            
+
+            // let time = l.getTime();
+            // document.write(time);
+
+          </script>
+          <style>
+            body{
+                background-color: black;
+                color: white;
+            }
+            h1{
+                color: rgb(7, 7, 7);
+                font-size: 50px;
+                font-weight: 600;
+                margin: auto;
+                margin: 10% 30%;
+                border: 5px solid rgb(114, 104, 104);
+                padding: 50px;
+                text-align: center;
+                border-radius: 50px;
+                background-color: white; 
+            }
+          </style>
+</head>
+<body onload="clock()">
+
+
+    <h1 > 
+      <span class="spam1"></span>
+      <span class="spam1"></span>
+      <span class="spam1"></span>
+      <span class="spam1"></span>
+    </h1>
+       <script>
+          function clock(){
+              var d = new Date();
+              var h = d.getHours(); 
+              var m = d.getMinutes();
+              var s = d.getSeconds();
+
+              var session = "AM"
+              
+              if(h > 12){
+                h = h - 12;
+                session = "Pm";
+              }else{
+                session = "Am";
+              }
+              // if(h >= 12){
+                
+              // }
+              // else{
+              //   session = "Am";
+              // }
+              h  = h < 10 ? "0"+ h : h ;
+              m  = m < 10 ? "0"+ m : m ;
+              s  = s < 10 ? "0"+ s : s ;
+
+
+              var t = h + " : " + m  + " : " + s + " : " + session;
+              document.getElementsByTagName('h1')[0].innerText = t;
+
+             
+              setTimeout(clock, 1000);
+
+          }
+
+          let l = new Date();
+            // document.write(l);
+            // document.write(l.getFullYear());
+            // console.log(l.getTime());
+            var v =l.getHours();
+            var t =l.getMinutes(); // jan=0 feb march
+            var y = l.getSeconds();  // sun=0 mon tue
+
+            document.write(v + " "+ t+" "+y);
+
+
+            setTimeout(l , 1000)
+       </script>   
+</body>
+</html>
