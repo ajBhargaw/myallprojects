@@ -1,0 +1,82 @@
+@media only screen and (min-width: 200px) and (max-width: 567px){
+   .main1-inner {
+      flex-direction: column;
+   } 
+    .main1-left{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      z-index: 9;
+
+    }
+   .main1-left button{
+      display: block;
+      margin-right: 30px;
+      z-index: 9;
+   }
+   .main1-right{
+      display: none;
+   }
+   .btn{
+      display: none;
+      width: 55%;
+   }
+   .ul li{
+      margin: 0px 10px;
+   }
+
+
+   .main2-inner{
+      flex-direction: column-reverse;
+   }
+   .main2-left{
+      margin-top: 50px;
+      padding: 0px 15px;
+   }
+   .main3-inner img{
+      height: 20px;
+   }
+   .main3-inner button{
+      width: 100px;
+      height: 40px;
+   }
+
+   .main5-box{
+      flex-direction: column;
+      align-items: center;
+   }
+   .main5-inner{
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 10px;
+      opacity: 0.5;
+      border-radius: 10px;
+      background-color: rgb(234, 225, 185);
+   }
+   .main6-btn{
+      margin-top: 20px;
+   }
+   .main6-btn1{
+      width: 40%;
+   }
+   .main6-btn2{
+      width: 40%;
+   }
+   .main6-box{
+      flex-direction: column;
+   }
+   .box1{
+      margin-top:20px;
+    } 
+   .box1 img{
+      width: 90%;
+      height: 180px;
+   }
+   .box1 h2{
+      margin-top: 20px;
+   } 
+   .box1 p{
+     margin-top: 10px;
+   }
+}
